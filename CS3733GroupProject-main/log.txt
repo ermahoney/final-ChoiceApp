@@ -1,0 +1,937 @@
+commit 62617e1f36cb3c839d09168cf4bc93335580bf3b
+Author: M Gabi Tessier <48228807+gabi246@users.noreply.github.com>
+Date:   Wed Dec 9 14:09:36 2020 -0500
+
+    Update README.md
+
+commit 4771d12f70a7426a6c2a193768d8b6165f0399c6
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Wed Dec 9 14:08:34 2020 -0500
+
+    Edited JUnit Test Cases
+
+commit 1f051fa1b9c8a3eb34e1465a688ef2d34914369d
+Author: M Gabi Tessier <48228807+gabi246@users.noreply.github.com>
+Date:   Wed Dec 9 14:01:23 2020 -0500
+
+    Update README.md
+
+commit 2d1519b1187a17c174b925f47b5f5fb1a625b22c
+Author: M Gabi Tessier <48228807+gabi246@users.noreply.github.com>
+Date:   Wed Dec 9 14:00:34 2020 -0500
+
+    Update README.md
+
+commit eceea03844df9bd67efa2d1d8e5148dc5111ab9c
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Wed Dec 9 13:39:10 2020 -0500
+
+    Fixed choice does not exist error
+
+commit 13ff2f5a25aaa288dc2f7f4999210153680d6213
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Dec 8 21:37:08 2020 -0500
+
+    got rid of old comments
+
+commit 16b06a51370db599176ed7c2e8380e93fb4e1ca1
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Dec 8 21:15:38 2020 -0500
+
+    fixed undefined error
+
+commit 36a0be1ae41c936c8de5c669532f234e09f084b4
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Tue Dec 8 21:09:52 2020 -0500
+
+    Slight Changes
+
+commit b6898334c7654daeea615e111689d67c8f8465a2
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Tue Dec 8 20:35:10 2020 -0500
+
+    Changes
+
+commit 213e96c5a423cde610e04b8d5987f158b4c320c7
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Dec 8 20:24:07 2020 -0500
+
+    push again
+
+commit 1a1adfd7d815f287e06fcdcdb01694bbc4459d62
+Merge: 0df4367 d31e586
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Dec 8 20:23:45 2020 -0500
+
+    Merge branch 'main' of https://github.com/gabi246/CS3733GroupProject.git into main
+
+commit 0df436736c23127c7bdb24af765fdb2f6dcd2447
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Dec 8 20:23:29 2020 -0500
+
+    votes work
+
+commit d31e5868c8bd701a163a5c58478d00792ef31312
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Tue Dec 8 19:57:09 2020 -0500
+
+    Timestamps in Model is now Strings
+
+commit 216333c6827de95fd68fcaeb0de8292edca432e9
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Dec 8 19:49:53 2020 -0500
+
+    everything in sign in choice works
+
+commit 1b769ac8c787edf5569b43d632dbe6b4d7d8ebad
+Author: Gabi Tessier <gabi246>
+Date:   Tue Dec 8 17:09:10 2020 -0500
+
+    functionality for indicating if current member has like or disliked a choice
+
+commit ee88f10cc4db4dc53e86a57d9f82c28f09a98a20
+Author: Gabi Tessier <gabi246>
+Date:   Tue Dec 8 17:08:19 2020 -0500
+
+    images of selected thumbsUp and selected thumbsDown
+
+commit 2c0212463dcb50eacc0125dbf429e5d4d711106f
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Tue Dec 8 00:55:14 2020 -0500
+
+    Edited tests so they have current cids and aids.Checked code coverage
+
+commit 6124088011938ffbf4420dcd76ddd88975d45ef5
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Tue Dec 8 00:26:01 2020 -0500
+
+    Handles add vote, add feedback, and choose alt for stale choices
+
+commit 7c0e79ae60d1ff314821ae233e8271321390aaa6
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Tue Dec 8 00:01:30 2020 -0500
+
+    Changed dates to Timestamp. Tested that it works
+
+commit 2b1e221fc3fcdb23c972c55e50c47cf781163d1c
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Dec 7 12:30:02 2020 -0500
+
+    changed date field in feedback
+
+commit 6067bcdea0053320bcd341d3d25dbc44554d4fb0
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Dec 7 12:06:13 2020 -0500
+
+    added description to Choice Report
+
+commit feefb1db65af09042a618b0f62c3333445d7469c
+Author: M Gabi Tessier <48228807+gabi246@users.noreply.github.com>
+Date:   Sat Dec 5 11:14:15 2020 -0500
+
+    Update README.md
+
+commit 6c6312d27f04179f30f99dac17cd69d189c1fce5
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Fri Dec 4 16:51:41 2020 -0500
+
+    DeleteChoice Working
+
+commit 5689a8a4d844be5625317b24d6a23d208ccdf9b1
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Fri Dec 4 16:06:40 2020 -0500
+
+    Maybe Fixed username problem
+
+commit 343fe3622d50d5f3ee4a7ed22082fa04dfa9ac08
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Thu Dec 3 21:14:39 2020 -0500
+
+    Fixed ChooseAlternative to give dateOfCompletion
+
+commit f9784b143437a5df8d585e8e97fe8ef121074cdc
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Thu Dec 3 11:38:18 2020 -0500
+
+    changed member to username and fixed num of app/disapp
+
+commit 08862b3e7a94cc4e09d7cd59e23f9b8c7c707e1e
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Thu Dec 3 00:42:49 2020 -0500
+
+    Voting and Feedback should work given a username
+
+commit c006d1b3c5e4c9afed3e109824733a16338dc5d3
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Wed Dec 2 19:47:14 2020 -0500
+
+    more error messaging
+
+commit c5fb9b547fec24ee7d85ba142e3d00e06148fd2c
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Wed Dec 2 19:44:36 2020 -0500
+
+    added error messaging to html
+
+commit 9bab6d88b662f0aedf925eefbd150021ccb89323
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Wed Dec 2 19:31:10 2020 -0500
+
+    fixed one var in closed choice
+
+commit fe9184bef779f186c9690ef9a701b166cb26ce57
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Wed Dec 2 19:28:48 2020 -0500
+
+    fixing closed choice
+
+commit a9f4a5a21b97ae69c5cfcede7835abdbacf067d8
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Wed Dec 2 18:52:00 2020 -0500
+
+    Correct Order. Major headache
+
+commit 810734118449dbdd70f25b0a98e43abadcfe0796
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Wed Dec 2 17:04:51 2020 -0500
+
+    fixing redirect error
+
+commit 4f9af64189aa13fd650ca69fa8d05db0153c2e74
+Author: Gabi Tessier <gabi246>
+Date:   Wed Dec 2 16:40:50 2020 -0500
+
+    change cid
+
+commit 1fefad47d2b9bd09e1857df5644c5fc89833856e
+Author: Gabi Tessier <gabi246>
+Date:   Wed Dec 2 15:54:03 2020 -0500
+
+    changing the text box for username to read only once entered and than getting the mid that way
+
+commit f53e527c47a5bbcc44033d4dee3fd68966c57c6b
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Wed Dec 2 10:45:40 2020 -0500
+
+    Delete Choice (Work in Progress)
+
+commit a87a78800a19caa6a171eb88c3985827c87f191d
+Author: ermahoney <56125431+ermahoney@users.noreply.github.com>
+Date:   Tue Dec 1 21:24:37 2020 -0500
+
+    Update LambdaFunctionHandlerTest.java
+
+commit afd82d00e5a644ca1a6469c1c4044ea463879209
+Author: ermahoney <56125431+ermahoney@users.noreply.github.com>
+Date:   Tue Dec 1 21:23:40 2020 -0500
+
+    Update ChoiceDAO.java
+
+commit bcbe1300111bed60d347686753ff29ebbf5cab2f
+Author: ermahoney <56125431+ermahoney@users.noreply.github.com>
+Date:   Tue Dec 1 21:22:06 2020 -0500
+
+    Add files via upload
+
+commit 5e58407ce7afbcbdde10b8b54c90a7a7830fda0e
+Author: ermahoney <56125431+ermahoney@users.noreply.github.com>
+Date:   Tue Dec 1 21:21:20 2020 -0500
+
+    Add files via upload
+
+commit 31057a945a317ea431fa7ee19be4f0456ea77832
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Dec 1 20:39:22 2020 -0500
+
+    pushing again
+
+commit 13be351b4caacb635eab375fc9d56ebd8d2fd36c
+Merge: 56ad9b0 8196ace
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Dec 1 20:38:25 2020 -0500
+
+    Merge branch 'main' of https://github.com/gabi246/CS3733GroupProject.git into main
+
+commit 56ad9b0b07a556fdd1a768be307b9af763a074e3
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Dec 1 20:38:06 2020 -0500
+
+    correct num of alts displays
+
+commit 8196acefb45ec6318017243f87ffa6d45cc6a9f4
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Tue Dec 1 20:17:57 2020 -0500
+
+    Fixed browser sign in problem
+
+commit 9c97fe0cc7e3789c64fdc14d4f6c2d4eb5bfeca0
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Tue Dec 1 15:28:14 2020 -0500
+
+    ChooseAlternative done and tested
+
+commit bc3a28095b309435602f58661880f0772b9280b1
+Author: lewasserman <62565291+lewasserman@users.noreply.github.com>
+Date:   Tue Dec 1 14:28:50 2020 -0500
+
+    Changed AlternativeRequest id to aid
+
+commit d48b7c79de192bcacaa4a0f78568779338ed0e70
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Tue Dec 1 14:12:37 2020 -0500
+
+    SubmitFeedback done and tested
+
+commit c99b9c40f421958b6a9d0a3d2fdd16004234ed31
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Dec 1 13:44:58 2020 -0500
+
+    refresh choice added
+
+commit e7e171bc4526954dbdb0ab6db7eae497461e060e
+Merge: 4faab98 8662617
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Dec 1 13:44:06 2020 -0500
+
+    Merge branch 'main' of https://github.com/gabi246/CS3733GroupProject.git into main
+
+commit 4faab983cc6b3b8dadd7af1a137e37c1fceddd03
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Dec 1 13:43:52 2020 -0500
+
+    added refresh button
+
+commit 8662617b505dc6571f58f936b341dd21e2ec5d44
+Author: lewasserman <62565291+lewasserman@users.noreply.github.com>
+Date:   Tue Dec 1 13:34:14 2020 -0500
+
+    Update GroovyAPI.yaml
+
+commit 79eaf5f716655dd658e569f1a9c0e0387ca4ca7f
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Mon Nov 30 23:22:31 2020 -0500
+
+    No blank alternatives, altervote and refresh choice working
+
+commit 2ee28edd9fcdca1fdb5d8bcde0af90d90571197f
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 30 21:46:55 2020 -0500
+
+    fixed url error
+
+commit f5ec42d7676a42682b4d752e9830ced84976e5fd
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 30 21:44:51 2020 -0500
+
+    smaller images and more aligned page
+
+commit a3b03475cea82e65d099b2cbcab0d202cebbd6be
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 30 21:27:22 2020 -0500
+
+    closed choice working
+
+commit 4b8b8edb154e837b74e02d4a2d4607066ddc8704
+Author: Gabi Tessier <gabi246>
+Date:   Mon Nov 30 15:48:42 2020 -0500
+
+    updated closed choice
+
+commit fdec210bef8deaf2b94fba8cf5fef9ad7167be50
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 30 13:43:48 2020 -0500
+
+    push again
+
+commit 1f13145d5351bbe62d5a2e8e5cb4b9e03e297cda
+Merge: c80420c 958f93d
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 30 13:42:15 2020 -0500
+
+    Merge branch 'main' of https://github.com/gabi246/CS3733GroupProject.git into main
+
+commit c80420cafdaa7b56b4509b182f314800bc225143
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 30 13:42:04 2020 -0500
+
+    add feedback good
+
+commit 958f93d82c9c91349ef78bf30378d0dbf0602456
+Author: Gabi Tessier <gabi246>
+Date:   Mon Nov 30 13:39:16 2020 -0500
+
+    updated the choose alternative btn to an dev element with an icon
+
+commit 6dba12ef2dc3d87f85f6825d7f72fb4f0d2b5197
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 30 13:25:19 2020 -0500
+
+    changed feedback icon
+
+commit c5a04f498e277f88fe0b979a457b6b342a308b6d
+Author: Gabi Tessier <gabi246>
+Date:   Mon Nov 30 13:01:18 2020 -0500
+
+    icons for chooseAlternative, refresh, and submit feedback were created and added
+
+commit c79f172ee17ade9e87091040cf39f41d0bb34e53
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 30 12:52:01 2020 -0500
+
+    fixed () and feedback
+
+commit c49a12842c045ff55f3d261b19d46b9afa73e87f
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 30 12:42:24 2020 -0500
+
+    no paren around icons
+
+commit c8090007d5410d25f60aa19f6a1c5048591ec27f
+Merge: 6882d9b 270da6e
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Mon Nov 30 12:38:30 2020 -0500
+
+    Merge branch 'main' of https://github.com/gabi246/CS3733GroupProject.git into main
+
+commit 6882d9b3296c249013f224720e6b56cc57be1586
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Mon Nov 30 12:38:15 2020 -0500
+
+    RefreshChoice, AlterVote, ChoiceRequest, and VoteRequest
+
+commit 270da6e25232dfdd3b2f2e333eaa0c755ebca834
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 30 12:25:52 2020 -0500
+
+    approval and disapproval set up
+
+commit 75a1eab30815a0d3bbac7597b070c79860e21271
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Sun Nov 29 21:24:00 2020 -0500
+
+    formatting correct but functionality still doesnt work
+
+commit c52fd8bf88dd318432b3cab7b2155cb76d21123c
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Sun Nov 29 21:06:20 2020 -0500
+
+    fixing errors
+
+commit 850e19fd826dffd8e04b9b0bb2e0512c15022697
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Sun Nov 29 20:49:00 2020 -0500
+
+    maybe added functionality to buttons
+
+commit 441e6962b24ab55abd6dfbde88662325e7404569
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Sun Nov 29 18:27:33 2020 -0500
+
+    fixed some errors
+
+commit b2d3a3eb18109cc0f75fed488909c7a85b44df8f
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Sun Nov 29 12:18:45 2020 -0500
+
+    table for admin page
+
+commit b83b7ca3167db3193c1197a3ddb117c1e4ca0efe
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Sun Nov 29 11:15:11 2020 -0500
+
+    added some changes to admin
+
+commit a77d5742209653179fd2836ee405c5faf7e3a150
+Merge: 01788bd fe16f8f
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Sun Nov 29 11:14:04 2020 -0500
+
+    Merge branch 'main' of https://github.com/gabi246/CS3733GroupProject.git into main
+
+commit 01788bd304119b0a52fe16faec77d1689f10dc7c
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Sun Nov 29 11:13:16 2020 -0500
+
+    some changes to admin
+
+commit fe16f8f54f3505ad628d76e1c95e2d353055a305
+Author: M Gabi Tessier <48228807+gabi246@users.noreply.github.com>
+Date:   Tue Nov 24 21:26:37 2020 -0500
+
+    Update README.md
+
+commit 3f107beba4c0ebebe0bf2bd41d14789c17fc9ddd
+Author: M Gabi Tessier <48228807+gabi246@users.noreply.github.com>
+Date:   Tue Nov 24 21:24:22 2020 -0500
+
+    Update README.md
+
+commit 49d72fcb80eba035241eab657d426b37d2aaff5f
+Author: M Gabi Tessier <48228807+gabi246@users.noreply.github.com>
+Date:   Tue Nov 24 21:21:23 2020 -0500
+
+    Update README.md
+
+commit 050cad0b4b14cd6c2b05c340a487e4d290aafd3b
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Tue Nov 24 21:18:45 2020 -0500
+
+    Alternatives fixed
+
+commit 407df8d77a4a21d404fc7c5f72ee06b28c849e70
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Nov 24 21:17:15 2020 -0500
+
+    green css
+
+commit d7945415ca0c91a4088af49eb8d72c27dd776fc4
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Nov 24 20:49:47 2020 -0500
+
+    updated files
+
+commit c245766d6c8759588096d1f855dacbeb404b224a
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Tue Nov 24 19:43:41 2020 -0500
+
+    Getter, setters, and empty constructors. Fix for numMembers=0
+
+commit 523d118d8c23cdfd01d5874bd4c600248730c973
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Nov 24 15:43:24 2020 -0500
+
+    fixed json in scripts
+
+commit 438c7c7748f426174f80e3928504284dac502008
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Nov 24 14:40:32 2020 -0500
+
+    admin page fixed
+
+commit 507958085eb8a7e0ab200cb74a3bf3b36cc3d8a1
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Nov 24 14:30:35 2020 -0500
+
+    fixed json parse
+
+commit 6c4171f786bcd8a34e98a0ab34a21059b35d8b9d
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Nov 24 14:21:44 2020 -0500
+
+    all requests changed
+
+commit ffb489f90af7c6e08dbf478e593b0ef2e8cc4ed4
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Nov 24 13:35:09 2020 -0500
+
+    new api
+
+commit 9b9479b2b6f5deb0fd6b6b8789274f181c96bbe2
+Author: Gabi Tessier <gabi246>
+Date:   Tue Nov 24 11:58:48 2020 -0500
+
+    base_url added
+
+commit d4d346f5486fd6e81880f1b46bf4b706440a0371
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Nov 24 11:42:14 2020 -0500
+
+    fixed somthing in scripts
+
+commit 61e52ff7322dc9d30f822985738196d8bfdc4be4
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Nov 24 11:20:52 2020 -0500
+
+    most updated html
+
+commit 3a63ecb4018467487dbfafe3d672946731949091
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Nov 24 10:39:50 2020 -0500
+
+    choice links works now
+
+commit 7efb0c40a7fcf05a8858ac06d51a9c427397a2dd
+Author: Gabi Tessier <gabi246>
+Date:   Tue Nov 24 10:24:10 2020 -0500
+
+    fixed HTML and JS to re-direct correctly
+
+commit 504f452fea88ce0ea8a42ddd265d3a13bd2d9fb3
+Author: lewasserman <62565291+lewasserman@users.noreply.github.com>
+Date:   Tue Nov 24 00:21:35 2020 -0500
+
+    Changes numOfTeams to numOfMembers in ChoiceCreationRequest
+
+commit cfa2edfe2d62fc26c848316ad8ca7f4b14bd5907
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 23 20:45:51 2020 -0500
+
+    fully tested html and js
+
+commit 70a5e090ff8f6421e00613bcadb8c5f7e3638cd8
+Author: lewasserman <62565291+lewasserman@users.noreply.github.com>
+Date:   Mon Nov 23 14:49:31 2020 -0500
+
+    Update GroovyAPI.yaml
+
+commit 373f287582c0fb5ba96895dbc3d9bfbbff7300bf
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 23 13:53:14 2020 -0500
+
+    testChoice json
+
+commit 38ecff435b5aa0548233f74012be3b566ed6e4ad
+Merge: 81923d8 f977d64
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 23 13:52:34 2020 -0500
+
+    Merge branch 'main' of https://github.com/gabi246/CS3733GroupProject.git into main
+
+commit 81923d853b53c866a7a20b09f8f5863fd3fbbb0f
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 23 13:51:50 2020 -0500
+
+    first test choice json
+
+commit f977d645d91c624466a34535ae4330bbeecdb934
+Author: Gabi Tessier <gabi246>
+Date:   Mon Nov 23 13:33:15 2020 -0500
+
+    hyper link added to createChoice and ChoiceSignIn
+
+commit 2384f3710767f74a456ac8cc7d6ef669920fb6da
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 23 13:29:57 2020 -0500
+
+    added Page Directories
+
+commit fc126e7c061d5fefed353b4e362c66bd0c299753
+Merge: ecdc122 9203eb5
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 23 13:28:20 2020 -0500
+
+    Merge branch 'main' of https://github.com/gabi246/CS3733GroupProject.git into main
+
+commit ecdc1221e113973d2c5c51f501790a0b7de3fde5
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 23 13:25:59 2020 -0500
+
+    added page directory
+
+commit 6f65e156670512dac5bcfe12f42315421961af1e
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 23 13:17:07 2020 -0500
+
+    made all buttons unique
+
+commit 9203eb5f9132f413e961810ca57304ce4abf6406
+Author: lewasserman <62565291+lewasserman@users.noreply.github.com>
+Date:   Mon Nov 23 13:14:15 2020 -0500
+
+    deleted isSelected from Choice definition
+
+commit bf84fd00189467902a78ffbba3ef6fabe5966c81
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 23 13:01:57 2020 -0500
+
+    added number/members to an alternative
+
+commit df18aacc7eefa99110ffbcfd781aca7055e70c24
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 23 12:54:39 2020 -0500
+
+    updated Admin choice display buttons-->paragaraphs
+
+commit 1e5436b32c54127b99d17d62d609cbeec034c0be
+Author: Gabi Tessier <gabi246>
+Date:   Mon Nov 23 12:43:02 2020 -0500
+
+    update the chose alternative functionality in JS
+
+commit aa1bb11819028f784790ab5fa1529511d15a9b38
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 23 12:28:12 2020 -0500
+
+    fixed up html after our 11am meeting
+
+commit 468c6b81c2893dc78dfc8ba29ab234422ab51819
+Merge: 7d604aa d1701cc
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 23 12:24:23 2020 -0500
+
+    Merge branch 'main' of https://github.com/gabi246/CS3733GroupProject.git into main
+
+commit 7d604aa712b5f14c2d8b9a531cbefcf0a4ee8461
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Mon Nov 23 12:21:59 2020 -0500
+
+    Fixed urls, and cleaned up html code
+
+commit d1701cc199bca7c3ba64be056c2d3e9521d6b6c8
+Author: lewasserman <62565291+lewasserman@users.noreply.github.com>
+Date:   Mon Nov 23 11:57:16 2020 -0500
+
+    Update GroovyAPI.yaml
+
+commit 984c06552777422f0440450a36e978b927465063
+Author: Gabi Tessier <>
+Date:   Mon Nov 23 09:52:42 2020 -0500
+
+    update the chose alternative button
+
+commit 4340d8d898b73c010c7851b01fe1a4268156cfa2
+Author: lewasserman <62565291+lewasserman@users.noreply.github.com>
+Date:   Mon Nov 23 00:21:41 2020 -0500
+
+    Update GroovyAPI.yaml
+
+commit ab84968eb528c2cca0bd900d6f2d8d68d7f99554
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Sun Nov 22 20:48:07 2020 -0500
+
+    Get choices res/req done
+
+commit 2a4971af5d5746a3c08f3875a8d840b0fa28a881
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Sun Nov 22 15:52:13 2020 -0500
+
+    folders rearranged
+
+commit 925f8c19eced43c087f464f33e5dfcd631220f61
+Author: M Gabi Tessier <48228807+gabi246@users.noreply.github.com>
+Date:   Sun Nov 22 15:26:19 2020 -0500
+
+    Add files via upload
+
+commit 5abb21a52e9485458f8f15dc1b54261ea83b67f3
+Author: lewasserman <62565291+lewasserman@users.noreply.github.com>
+Date:   Sat Nov 21 17:01:38 2020 -0500
+
+    Update GroovyAPI.yaml
+
+commit 092c54f233bd6dff50cc450e66aaeb7d7acb626e
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Fri Nov 20 14:01:35 2020 -0500
+
+    Add ChoiceApp Project
+
+commit 27929d377ea2b7f158415d29329c675a9d86c51e
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Fri Nov 20 13:33:00 2020 -0500
+
+    Remove duplicated directory
+
+commit 64ea259802ee0d318aec120d7920b26f94d0f812
+Author: lewasserman <62565291+lewasserman@users.noreply.github.com>
+Date:   Thu Nov 19 22:17:55 2020 -0500
+
+    Add files via upload
+
+commit 5baf0b7741a3f49dd11a2e299e241c4a9475b656
+Author: lewasserman <laurenewasserman@gmail.com>
+Date:   Thu Nov 19 21:53:07 2020 -0500
+
+    Remove duplicated directory
+
+commit 7c394f08f49c69e4643edcbdc552bfafcc71c353
+Author: lewasserman <62565291+lewasserman@users.noreply.github.com>
+Date:   Thu Nov 19 21:43:14 2020 -0500
+
+    Add files via upload
+
+commit 8496235cca7ac0d521265a753568f8eb885b8ad6
+Author: lewasserman <62565291+lewasserman@users.noreply.github.com>
+Date:   Thu Nov 19 21:35:33 2020 -0500
+
+    Update GroovySchema.txt
+
+commit 5fe2bfd6477808514b411f00954c32638e32d74c
+Author: lewasserman <62565291+lewasserman@users.noreply.github.com>
+Date:   Thu Nov 19 21:35:07 2020 -0500
+
+    Update GroovyAPI.yaml
+
+commit 7f0abf1084693cae82b9bd7db3feffaea3807611
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Thu Nov 19 12:10:45 2020 -0500
+
+    finished API
+
+commit 439e4362124df033cd29cd9fa3de6a5dd2d72f32
+Author: M Gabi Tessier <48228807+gabi246@users.noreply.github.com>
+Date:   Thu Nov 19 12:09:56 2020 -0500
+
+    Update README.md
+
+commit 2296eff3d36720351b29ef5f8845a3a2b1e778cd
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Thu Nov 19 12:09:51 2020 -0500
+
+    Delete Groovy1-ChoiceApp-1.0.0-swagger.yaml
+
+commit cfe34b3484e40650ee84fe1b594059d4c7f83246
+Author: M Gabi Tessier <48228807+gabi246@users.noreply.github.com>
+Date:   Thu Nov 19 12:09:10 2020 -0500
+
+    Update README.md
+
+commit f5820a400b7afea29a5bf761f3947a6733345dde
+Author: M Gabi Tessier <48228807+gabi246@users.noreply.github.com>
+Date:   Thu Nov 19 12:07:58 2020 -0500
+
+    Update README.md
+
+commit 41b80bd09ecf19de8213f548bd5b53c00840b3ef
+Author: M Gabi Tessier <48228807+gabi246@users.noreply.github.com>
+Date:   Thu Nov 19 12:04:45 2020 -0500
+
+    Update README.md
+
+commit f5503e27883b509601e97ca9a0b770ccf875a8f5
+Author: M Gabi Tessier <48228807+gabi246@users.noreply.github.com>
+Date:   Thu Nov 19 12:01:53 2020 -0500
+
+    Update README.md
+
+commit c5bfb801c40ae83815bd8307aeedd1831afc6178
+Author: M Gabi Tessier <48228807+gabi246@users.noreply.github.com>
+Date:   Thu Nov 19 12:01:02 2020 -0500
+
+    Update README.md
+
+commit becdf8ec352f6e6f35f21009b87ffc4816c07a18
+Author: M Gabi Tessier <48228807+gabi246@users.noreply.github.com>
+Date:   Thu Nov 19 11:59:02 2020 -0500
+
+    Update README.md
+
+commit 51cae032268db783302ac1cdf38e20a6beda89bc
+Author: M Gabi Tessier <48228807+gabi246@users.noreply.github.com>
+Date:   Thu Nov 19 11:58:30 2020 -0500
+
+    Update README.md
+
+commit d341ecbbbb1a23ee3a5e34490bd37befd73ff9e6
+Author: M Gabi Tessier <48228807+gabi246@users.noreply.github.com>
+Date:   Thu Nov 19 11:57:33 2020 -0500
+
+    Update README.md
+
+commit ddce419c6683368171180195c1a9ba07bf5e7e28
+Author: M Gabi Tessier <48228807+gabi246@users.noreply.github.com>
+Date:   Thu Nov 19 11:55:22 2020 -0500
+
+    Update README.md
+    
+    Updating README with title and description
+
+commit afea5d24686f965b2f787616cacec1c99a43ec71
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Thu Nov 19 11:27:35 2020 -0500
+
+    updated API
+
+commit 508be63bec07d5faf40a2b66ccebeff841fa8508
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Wed Nov 18 16:03:37 2020 -0500
+
+    Add files via upload
+
+commit 617b48eaefc31ce5329aa2ce17fb8a92e04304ee
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Wed Nov 18 16:00:55 2020 -0500
+
+    API fixed ready to submit
+
+commit d8596df6dd020738d3d471be4b19784c28c3dab8
+Merge: 3efccf2 cf27b28
+Author: Gabi Tessier <mtessier246@gmail.com>
+Date:   Wed Nov 18 14:54:01 2020 -0500
+
+    individual api's moved to a folder
+
+commit 3efccf2c36b35fe5202da778f51ccba81f85ffe2
+Author: Gabi Tessier <mtessier246@gmail.com>
+Date:   Wed Nov 18 14:53:05 2020 -0500
+
+    individual api's moved to a folder
+
+commit cf27b286ddb42a6bf05ebc08bc5e63347473db96
+Author: ermahoney <56125431+ermahoney@users.noreply.github.com>
+Date:   Wed Nov 18 14:48:40 2020 -0500
+
+    Rename ermahoney-ChoiceApp-1.0.0-swagger.yaml to EmilyAPI
+
+commit 65b88341411fd1d9dceeb73b98d907c04c787af9
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Wed Nov 18 14:46:36 2020 -0500
+
+    Rename Groovy1-ChoiceApp-1.0.0-swagger.yaml to JennaAPI.yaml
+
+commit 569bb3275fc8aa3414a596e3a950734680d80bfa
+Author: lewasserman <62565291+lewasserman@users.noreply.github.com>
+Date:   Wed Nov 18 14:46:18 2020 -0500
+
+    Rename lewasserman2-ChoiceApp-1.0.0-swagger (2).yaml to GroovyAPI.yaml
+
+commit 497ed6a3a52773a5adf63cfc3430d0edc863f64f
+Author: lewasserman <62565291+lewasserman@users.noreply.github.com>
+Date:   Wed Nov 18 14:45:18 2020 -0500
+
+    Add files via upload
+    
+    With all stuff
+
+commit 34bf9f21b71138cdb4ff0c39faee9ae46c0fb263
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Wed Nov 18 14:07:49 2020 -0500
+
+    Update Groovy1-ChoiceApp-1.0.0-swagger.yaml
+
+commit c142306a3032c8a1dcea9df6eaa8e314bd8aa306
+Author: M Gabi Tessier <48228807+gabi246@users.noreply.github.com>
+Date:   Wed Nov 18 14:07:24 2020 -0500
+
+    Add files via upload
+
+commit 1c6e4a5ca56da8c613d0bd6d0fca86a133a41917
+Author: lewasserman <62565291+lewasserman@users.noreply.github.com>
+Date:   Wed Nov 18 14:00:58 2020 -0500
+
+    Delete lewasserman2-ChoiceApp-1.0.0-swagger.yaml
+
+commit fb3c1582c91031a580aeeb2b16f7e658836fccae
+Author: lewasserman <62565291+lewasserman@users.noreply.github.com>
+Date:   Wed Nov 18 14:00:29 2020 -0500
+
+    Add files via upload
+
+commit 939d1219a8e06179eedf977fe8c03a452f5d724b
+Author: lewasserman <62565291+lewasserman@users.noreply.github.com>
+Date:   Tue Nov 17 23:15:11 2020 -0500
+
+    Add files via upload
+
+commit bcb5d01c972300d6252e0a5c723d0769185d3a36
+Author: ermahoney <56125431+ermahoney@users.noreply.github.com>
+Date:   Tue Nov 17 21:40:04 2020 -0500
+
+    Add files via upload
+
+commit 654a3161442e0f8be4d6b306c94a592236ae85b8
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Nov 17 21:28:33 2020 -0500
+
+    Jenna's API section
+
+commit 841594a8e323a4473fce517640c286db7eed2626
+Author: jegalli22 <61163200+jegalli22@users.noreply.github.com>
+Date:   Tue Nov 17 10:25:04 2020 -0500
+
+    yaml file w/out definitions yet
+
+commit df48a89ae54a2034a76354ec9b4f331466749090
+Author: M Gabi Tessier <48228807+gabi246@users.noreply.github.com>
+Date:   Wed Oct 28 14:29:24 2020 -0400
+
+    Initial commit

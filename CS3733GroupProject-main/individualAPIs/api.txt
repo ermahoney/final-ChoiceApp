@@ -1,0 +1,55 @@
+/deleteChoice:
+    post:
+      summary: user clicks on delete choice button
+      operationId: deleteChoice
+      description: "removes the choice and refreshes display"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "successfully deleted choice"
+        400:
+          description: "failed to delete create"
+
+/selectChoice:
+    post:
+      summary: user clicks on a choice button
+      operationId: selectedOnChoice
+      description: "adds the choice to selected list"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "successfully selected a choice"
+        400:
+          description: "failed to select a create"
+
+/activeChoice:
+    get:
+      summary: shows user all active choices
+      operationId: activeChoice
+      description: "shows all active choices"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "successfully shows active choices"
+        400:
+          description: "failed to shows active choices"
+
+/closedChoice:
+    get:
+      summary: shows user all closed choices
+      operationId: closedChoice
+      description: "shows all closed choices"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "successfully shows closed choices"
+        400:
+          description: "failed to shows closed choices"

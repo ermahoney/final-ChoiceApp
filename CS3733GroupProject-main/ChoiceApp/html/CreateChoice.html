@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Create A Choice</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script type="text/javascript" src="../js/script.js" defer></script>
+    <script type="text/javascript" src="../js/api.js"></script>
+
+</head>
+
+<body>
+    <a href="InitialOptions.html">Home Page</a> <br>
+    <a href="ChoiceSignIn.html">Sign into Choice</a> <br>
+    <h1>Create A Choice</h1>
+
+    <form id="createChoice" onsubmit="return checkCreateChoice()" action="">
+        <label for="adminSignIn">Description:</label>
+        <input type="text" id="choiceDesc" name="choiceDesc" /><br /><br />
+
+        <label for="alt">Alternatives:</label><br />
+        <input type="text" id="alt1" name="alt1" /><br /><br />
+        <input type="text" id="alt2" name="alt2" /><br /><br />
+        <input type="text" id="alt3" name="alt3" /><br /><br />
+        <input type="text" id="alt4" name="alt4" /><br /><br />
+        <input type="text" id="alt5" name="alt5" /><br /><br />
+
+        <label for="numTeamMembers">Number of Team Members (Including yourself):</label>
+        <input type="number" id="numTeamMem" name="numTeamMem" min="1">
+
+        <button id="createChoiceSubmitBtn" type="submit">SUBMIT</button>
+    </form>
+
+    <div id="cidDisplay" style="visibility: hidden"></div>
+</body>
+
+</html>

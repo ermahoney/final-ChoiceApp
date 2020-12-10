@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Admin Home Page</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="../js/script.js" defer></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/AdminPage.js"></script>
+</head>
+
+<body onload="showAllChoices()">
+    <a href="InitialOptions.html">Home Page</a> <br>
+    <a href="ChoiceSignIn.html">Sign into Choice</a> <br>
+    <a href="CreateChoice.html">Create A Choice</a> <br>
+    <h1>Welcome Admin</h1> <br>
+
+
+    <form onsubmit="return checkDelete()" action="">
+        <label for="deleteChoices">Delete Choices</label>
+        <input type="number" step=any id="numDays" name="numDays" min="0" placeholder="n days old">
+        <button id="deleteBtn" type="submit">Delete</button>
+    </form>
+
+    <h2>Choices:</h2>
+    <br>
+    <div id="dvTable"></div>
+</body>
+
+</html>

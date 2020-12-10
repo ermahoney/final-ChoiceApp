@@ -1,0 +1,126 @@
+swagger: '2.0'
+info:
+  description: This is a choiceApp
+  version: 1.0.0
+  title: ChoiceApp
+  # put the contact info for your development or API team
+  contact:
+    email: you@your-company.com
+
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+
+# tags are used for organizing operations
+tags:
+- name: admins
+  description: Secured Admin-only calls
+- name: developers
+  description: Operations available to regular developers
+
+paths:
+  /createChoice:
+    get:
+      summary: user clicks on create choice button
+      operationId: redirectCreateChoice
+      description: "redirects to create choice page"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "successfully redirected to create choice page"
+        400:
+          description: "failed to redirect to create choice page"
+  /choiceLogin:
+    get:
+      summary: user clicks on choice login button
+      operationId: redirectChoiceLogin
+      description: "redirects to choice login page"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "successfully redirected to choice login page"
+        400:
+          description: "failed to redirect to choice login page"
+  /returnHome:
+    get:
+      summary: user requests to go to home page
+      operationId: redirectHomePage
+      description: "redirects to home page"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "successfully redirected to home page"
+        400:
+          description: "failed to redirect to home page"
+  /loginAdmin:
+    post:
+      summary: logs in admin
+      operationId: loginAdmin
+      description: logs in admin to the system
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: body
+        name: url
+        description: secret url for admin
+        schema:
+          $ref: '#/definitions/LoginUrl'
+      responses:
+        200:
+          description: admin logged in
+        400:
+          description: invalid url, admin failed to login
+  /SignInChoice:
+    post:
+      summary: signs into a choice
+      operationId: SignInChoice
+      description: user signs into a choice
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: body
+        name: "SignInForm"
+        description: form to sign into choice
+        schema:
+          $ref: '#/definitions/SignInForm'
+      responses:
+        200:
+          description: member signed in to choice
+        400:
+          description: member failed to login to choice
+definitions:
+  LoginUrl:
+    type: object
+    required:
+    - url
+    properties:
+      url:
+        type: string
+  SignInForm:
+    type: object
+    required:
+    - choiceId
+    - username
+    properties:
+      choiceId:
+        type: string
+        format: uuid
+      username:
+        type: string
+      password:
+        type: string
+# Added by API Auto Mocking Plugin
+host: virtserver.swaggerhub.com
+basePath: /Groovy1/ChoiceApp/1.0.0
+schemes:
+ - https

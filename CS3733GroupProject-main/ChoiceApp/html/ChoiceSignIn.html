@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Sign Into A Choice</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="../js/script.js" defer></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/get_ChoiceInfo.js"></script>
+  </head>
+  <body>
+     <a href="InitialOptions.html">Home Page</a> <br>
+  	<a href="CreateChoice.html">Create A Choice</a> <br>
+    <h1>Choice Login</h1>
+
+    <form onsubmit="return checkChoiceLogin()" >
+      <label for="cid">Choice ID:</label>
+      <input type="text" id="cid" name="cid" placeholder="enter Team ID" /><br /><br />
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="enter username" /><br /><br />
+
+      <label for="password">Password (optional):</label>
+      <input type="text" id="password" name="password" placeholder="enter password" /><br /><br />
+
+
+      <button id="ChoiceLoginSubmitBtn" type="submit">SUBMIT</button>
+
+    </form>
+
+
+    <div id="choiceDisplay" style="visibility: hidden"></div>
+
+  </body>
+</html>

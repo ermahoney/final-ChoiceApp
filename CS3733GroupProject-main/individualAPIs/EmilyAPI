@@ -1,0 +1,98 @@
+swagger: '2.0'
+info:
+  description: This is a choiceApp
+  version: 1.0.0
+  title: ChoiceApp
+
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+
+# tags are used for organizing operations
+tags:
+- name: admins
+  description: Secured Admin-only calls
+- name: developers
+  description: Operations available to regular developers
+
+paths:
+  /chooseAlt:
+    post:
+      summary: chooses an alternative
+      operationId: chooseAlt
+      description: Adds a chosen alternative to a choice
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: Alternative
+        description: Alternative to choose
+      responses:
+        201:
+          description: Alternative chosen
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Alternative'
+        400:
+          description: failed to choose Alternative
+  /removeLike:
+    post:
+      summary: removes a like from alternative that was previously liked by user
+      operationId: removeLike
+      description: Removes a like from alternative
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        200:
+          description: like removed
+        400:
+          description: like added
+  /removeDislike:
+    post:
+      summary: removes a dislike from alternative that was previously disliked by user
+      operationId: removeDislike
+      description: Removes a dislike from alternative
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        200:
+          description: dislike removed
+        400:
+          description: dislike added
+  /returnHome:
+    get:
+      summary: user requests to go to home page
+      operationId: redirectHomePage
+      description: "redirects to home page"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "successfully redirected to home page"
+        400:
+          description: "failed to redirect to homw page"
+
+definitions:
+  Alternative:
+    type: object
+    required:
+    - name
+    properties:
+      name:
+        type: string
+        example: Jaws
+# Added by API Auto Mocking Plugin
+host: virtserver.swaggerhub.com
+basePath: /ermahoney/ChoiceApp/1.0.0
+schemes:
+ - https

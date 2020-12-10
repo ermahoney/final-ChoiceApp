@@ -1,0 +1,50 @@
+create table `Member`(
+`mid` varchar(36),
+`name` varchar(36) not null unique,
+`password` varchar(50), 
+`cid` varchar(50) NOT NULL,
+primary key (`mid`),
+FOREIGN KEY (`cid`) REFERENCES Choice(`cid`)
+)engine=MyISAM default charset=latin1;
+
+
+create table `Feedback`(
+`fid` varchar(36),
+`timestamp` timestamp,
+`content` varchar(200) not null,
+`mid` varchar(36),
+`aid` varchar(36) NOT NULL,
+PRIMARY KEY (`fid`),
+FOREIGN KEY (`mid`) REFERENCES Member(`mid`),
+FOREIGN KEY (`aid`) REFERENCES Alternative(`aid`)
+);
+
+create table 'Vote' { #Approval or Disapproval
+'vid' varchar(36),
+'mid' varchar(36),
+'aid' varchar(36),
+'kind' vharchar(15), #Approval or Disapproval
+PRIMARY KEY (`vid`, 'mid', 'aid'),
+FOREIGN KEY (`mid`) REFERENCES Member(`mid`),
+FOREIGN KEY (`aid`) REFERENCES Alternative(`aid`)
+);
+
+create table `Alternative` (
+`aid` varchar(36) NOT NULL PRIMARY KEY,
+`cid` varchar(36),
+`description` VARCHAR(200),
+FOREIGN KEY (`cid`) REFERENCES Choice(`cid`)
+##num approvals and disapprovals
+);
+
+create table `Choice`(
+`cid` varchar(50),
+`chosenAid` varchar(36),
+`description` varchar(300),
+`numMembers` int,
+`dateOfCreation` date,
+`dateOfCompletion` date,
+‘isSelected’ boolean,
+PRIMARY KEY(`cid`),
+FOREIGN KEY (`chosenAid`) REFERENCES Alternative(`aid`),
+);

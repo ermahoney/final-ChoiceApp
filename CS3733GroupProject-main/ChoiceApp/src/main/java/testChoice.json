@@ -1,0 +1,45 @@
+{
+    "id": "1",
+    "choosenAlternative": "null",
+    "description": "What movie is your fav",
+    "numMembers": "2",
+    "dateOfCreation": "11-22-2020",
+    "dateOfCompletion": "11-23-2020",
+    "alternatives": [{
+            "id": "a",
+            "description": "Titanic",
+            "cid": "1",
+            "numApprovals": "1",
+            "numDisapprovals": "0",
+            "feedback": [{
+                "timestamp": "1",
+                "content": "I like this movie",
+                "member": "25",
+                "alternative": "a"
+            }],
+            "votes": [{
+                "alternative": "a",
+                "member": "25",
+                "kind": "approval"
+            }]
+        },
+        {
+            "id": "b",
+            "description": "Home Alone",
+            "cid": "1",
+            "numApprovals": "0",
+            "numDisapprovals": "1",
+            "feedback": [{
+                "timestamp": "2",
+                "content": "I hate this movie",
+                "member": "27",
+                "alternative": "b"
+            }],
+            "votes": [{
+                "alternative": "b",
+                "member": "27",
+                "kind": "disapproval"
+            }]
+        }
+    ]
+}

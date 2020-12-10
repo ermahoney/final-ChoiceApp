@@ -1,0 +1,684 @@
+---
+swagger: "2.0"
+info:
+  description: "This is a choice App"
+  version: "1.0.0"
+  title: "Choice App"
+host: "kz2hm5qn2b.execute-api.us-east-2.amazonaws.com"
+basePath: "/Iteration_1"
+schemes:
+- "https"
+paths:
+  /ChooseAlternative:
+    post:
+      operationId: "chooseAlt"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "AlternativeRequest"
+        required: true
+        schema:
+          $ref: "#/definitions/AlternativeRequest"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/ChoiceResponse"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+        400:
+          description: "400 response"
+      x-amazon-apigateway-integration:
+        uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:542123699201:function:CreateChoice/invocations"
+        responses:
+          default:
+            statusCode: "200"
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: "'*'"
+        passthroughBehavior: "when_no_match"
+        httpMethod: "POST"
+        contentHandling: "CONVERT_TO_TEXT"
+        type: "aws"
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses: {}
+      x-amazon-apigateway-integration:
+        responses:
+          default:
+            statusCode: "200"
+        requestTemplates:
+          application/json: "{\"statusCode\": 200}"
+        passthroughBehavior: "when_no_match"
+        type: "mock"
+  /CreateChoice:
+    post:
+      operationId: "createChoice"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "ChoiceCreationRequest"
+        required: true
+        schema:
+          $ref: "#/definitions/ChoiceCreationRequest"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/ChoiceResponse"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+        400:
+          description: "400 response"
+      x-amazon-apigateway-integration:
+        uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:542123699201:function:CreateChoice/invocations"
+        responses:
+          default:
+            statusCode: "200"
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: "'*'"
+          Error:
+            statusCode: "400"
+        passthroughBehavior: "when_no_match"
+        httpMethod: "POST"
+        contentHandling: "CONVERT_TO_TEXT"
+        type: "aws"
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses: {}
+      x-amazon-apigateway-integration:
+        responses:
+          default:
+            statusCode: "200"
+        requestTemplates:
+          application/json: "{\"statusCode\": 200}"
+        passthroughBehavior: "when_no_match"
+        type: "mock"
+  /DeleteChoice:
+    post:
+      operationId: "deleteChoice"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "DeleteChoiceRequest"
+        required: true
+        schema:
+          $ref: "#/definitions/DeleteChoiceRequest"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/ChoiceResponse"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+        400:
+          description: "400 response"
+      x-amazon-apigateway-integration:
+        uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:542123699201:function:CreateChoice/invocations"
+        responses:
+          default:
+            statusCode: "200"
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: "'*'"
+        passthroughBehavior: "when_no_match"
+        httpMethod: "POST"
+        contentHandling: "CONVERT_TO_TEXT"
+        type: "aws"
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses: {}
+      x-amazon-apigateway-integration:
+        responses:
+          default:
+            statusCode: "200"
+        requestTemplates:
+          application/json: "{\"statusCode\": 200}"
+        passthroughBehavior: "when_no_match"
+        type: "mock"
+  /DownVote:
+    post:
+      operationId: "dislike"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "VoteRequest"
+        required: true
+        schema:
+          $ref: "#/definitions/VoteRequest"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/ChoiceResponse"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+        400:
+          description: "400 response"
+      x-amazon-apigateway-integration:
+        uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:542123699201:function:CreateChoice/invocations"
+        responses:
+          default:
+            statusCode: "200"
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: "'*'"
+        passthroughBehavior: "when_no_match"
+        httpMethod: "POST"
+        contentHandling: "CONVERT_TO_TEXT"
+        type: "aws"
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses: {}
+      x-amazon-apigateway-integration:
+        responses:
+          default:
+            statusCode: "200"
+        requestTemplates:
+          application/json: "{\"statusCode\": 200}"
+        passthroughBehavior: "when_no_match"
+        type: "mock"
+  /RemoveDownVote:
+    post:
+      operationId: "removeDislike"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "VoteRequest"
+        required: true
+        schema:
+          $ref: "#/definitions/VoteRequest"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/ChoiceResponse"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+        400:
+          description: "400 response"
+      x-amazon-apigateway-integration:
+        uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:542123699201:function:CreateChoice/invocations"
+        responses:
+          default:
+            statusCode: "200"
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: "'*'"
+        passthroughBehavior: "when_no_match"
+        httpMethod: "POST"
+        contentHandling: "CONVERT_TO_TEXT"
+        type: "aws"
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses: {}
+      x-amazon-apigateway-integration:
+        responses:
+          default:
+            statusCode: "200"
+        requestTemplates:
+          application/json: "{\"statusCode\": 200}"
+        passthroughBehavior: "when_no_match"
+        type: "mock"
+  /RemoveUpVote:
+    post:
+      operationId: "removeLike"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "VoteRequest"
+        required: true
+        schema:
+          $ref: "#/definitions/VoteRequest"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/ChoiceResponse"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+        400:
+          description: "400 response"
+      x-amazon-apigateway-integration:
+        uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:542123699201:function:CreateChoice/invocations"
+        responses:
+          default:
+            statusCode: "200"
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: "'*'"
+        passthroughBehavior: "when_no_match"
+        httpMethod: "POST"
+        contentHandling: "CONVERT_TO_TEXT"
+        type: "aws"
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses: {}
+      x-amazon-apigateway-integration:
+        responses:
+          default:
+            statusCode: "200"
+        requestTemplates:
+          application/json: "{\"statusCode\": 200}"
+        passthroughBehavior: "when_no_match"
+        type: "mock"
+  /ShowAllChoices:
+    get:
+      operationId: "activeChoice"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/ChoiceResponse"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+        400:
+          description: "400 response"
+      x-amazon-apigateway-integration:
+        uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:542123699201:function:ShowAllChoices/invocations"
+        responses:
+          default:
+            statusCode: "200"
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: "'*'"
+          Error:
+            statusCode: "400"
+        passthroughBehavior: "when_no_match"
+        httpMethod: "POST"
+        contentHandling: "CONVERT_TO_TEXT"
+        type: "aws"
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses: {}
+      x-amazon-apigateway-integration:
+        responses:
+          default:
+            statusCode: "200"
+        requestTemplates:
+          application/json: "{\"statusCode\": 200}"
+        passthroughBehavior: "when_no_match"
+        type: "mock"
+  /SignInChoice:
+    post:
+      operationId: "SignInChoice"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "SignInRequest"
+        required: true
+        schema:
+          $ref: "#/definitions/SignInRequest"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/ChoiceResponse"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+        400:
+          description: "400 response"
+      x-amazon-apigateway-integration:
+        uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:542123699201:function:SignInChoice/invocations"
+        responses:
+          default:
+            statusCode: "200"
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: "'*'"
+          Error:
+            statusCode: "400"
+        passthroughBehavior: "when_no_match"
+        httpMethod: "POST"
+        contentHandling: "CONVERT_TO_TEXT"
+        type: "aws"
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses: {}
+      x-amazon-apigateway-integration:
+        responses:
+          default:
+            statusCode: "200"
+        requestTemplates:
+          application/json: "{\"statusCode\": 200}"
+        passthroughBehavior: "when_no_match"
+        type: "mock"
+  /SubmitFeedback:
+    post:
+      operationId: "submitFeedback"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "FeedbackRequest"
+        required: true
+        schema:
+          $ref: "#/definitions/FeedbackRequest"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/ChoiceResponse"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+        400:
+          description: "400 response"
+      x-amazon-apigateway-integration:
+        uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:542123699201:function:CreateChoice/invocations"
+        responses:
+          default:
+            statusCode: "200"
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: "'*'"
+        passthroughBehavior: "when_no_match"
+        httpMethod: "POST"
+        contentHandling: "CONVERT_TO_TEXT"
+        type: "aws"
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses: {}
+      x-amazon-apigateway-integration:
+        responses:
+          default:
+            statusCode: "200"
+        requestTemplates:
+          application/json: "{\"statusCode\": 200}"
+        passthroughBehavior: "when_no_match"
+        type: "mock"
+  /UpVote:
+    post:
+      operationId: "like"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "VoteRequest"
+        required: true
+        schema:
+          $ref: "#/definitions/VoteRequest"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/ChoiceResponse"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+        400:
+          description: "400 response"
+      x-amazon-apigateway-integration:
+        uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:542123699201:function:CreateChoice/invocations"
+        responses:
+          default:
+            statusCode: "200"
+            responseParameters:
+              method.response.header.Access-Control-Allow-Origin: "'*'"
+        passthroughBehavior: "when_no_match"
+        httpMethod: "POST"
+        contentHandling: "CONVERT_TO_TEXT"
+        type: "aws"
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses: {}
+      x-amazon-apigateway-integration:
+        responses:
+          default:
+            statusCode: "200"
+        requestTemplates:
+          application/json: "{\"statusCode\": 200}"
+        passthroughBehavior: "when_no_match"
+        type: "mock"
+  /RefreshChoice:
+    post:
+      tags:
+      - consumers
+      summary: refreshes the choice
+      operationId: refreshChoice
+      description: "refresh the choice"
+      produces:
+      - "application/json"
+      parameters:
+      - in: body
+        name: "ChoiceRequest"
+        description: cid of the choice requesting to be refreshed
+        schema:
+          $ref: '#/definitions/ChoiceRequest'
+      responses:
+        200:
+          description: "successfully refreshes the choice"
+          schema:
+            $ref: '#/definitions/ChoiceResponse'
+        400:
+          description: "failed to refresh the choice"
+definitions:
+  ChoiceResponse:
+    type: "object"
+    required:
+    - "choice"
+    - "error"
+    - "statusCode"
+    properties:
+      statusCode:
+        type: "integer"
+      error:
+        type: "string"
+      choice:
+        type: "array"
+        items:
+          $ref: "#/definitions/Choice"
+  Vote:
+    type: "object"
+    required:
+    - "alternative"
+    - "kind"
+    - "member"
+    properties:
+      alternative:
+        type: "string"
+      member:
+        type: "string"
+      kind:
+        type: "string"
+  Choice:
+    type: "object"
+    required:
+    - "alternatives"
+    - "choosenAlternative"
+    - "dateOfCompletion"
+    - "dateOfCreation"
+    - "description"
+    - "id"
+    - "numMembers"
+    properties:
+      id:
+        type: "string"
+      choosenAlternative:
+        type: "string"
+      description:
+        type: "string"
+      numMembers:
+        type: "integer"
+      dateOfCreation:
+        type: "string"
+      dateOfCompletion:
+        type: "string"
+      alternatives:
+        type: "array"
+        items:
+          $ref: "#/definitions/Alternative"
+  Alternative:
+    type: "object"
+    required:
+    - "cid"
+    - "description"
+    - "feedback"
+    - "aid"
+    - "votes"
+    properties:
+      aid:
+        type: "string"
+      description:
+        type: "string"
+      cid:
+        type: "string"
+      feedback:
+        type: "array"
+        items:
+          $ref: "#/definitions/Feedback"
+      votes:
+        type: "array"
+        items:
+          $ref: "#/definitions/Vote"
+  ChoiceRequest:
+    type: "object"
+    required:
+    - "cid"
+    properties:
+      cid:
+        type: "string"
+  DeleteChoiceRequest:
+    type: "object"
+    required:
+    - "nDays"
+    properties:
+      nDays:
+        type: "integer"
+  AlternativeRequest:
+    type: "object"
+    required:
+    - "aid"
+    properties:
+      aid:
+        type: "string"
+  Feedback:
+    type: "object"
+    required:
+    - "alternative"
+    - "content"
+    - "member"
+    - "timestamp"
+    properties:
+      timestamp:
+        type: "string"
+      content:
+        type: "string"
+      member:
+        type: "string"
+      alternative:
+        type: "string"
+  FeedbackRequest:
+    type: "object"
+    required:
+    - "alternative"
+    - "content"
+    - "member"
+    - "timestamp"
+    properties:
+      timestamp:
+        type: "string"
+      content:
+        type: "string"
+      member:
+        type: "string"
+      alternative:
+        type: "string"
+  VoteRequest:
+    type: "object"
+    required:
+    - "alternative"
+    - "kind"
+    - "member"
+    properties:
+      alternative:
+        type: "string"
+      member:
+        type: "string"
+      kind:
+        type: "string"
+  SignInRequest:
+    type: "object"
+    required:
+    - "choiceId"
+    - "username"
+    properties:
+      choiceId:
+        type: "string"
+        format: "uuid"
+      username:
+        type: "string"
+      password:
+        type: "string"
+  ChoiceCreationRequest:
+    type: "object"
+    required:
+    - "alternatives"
+    - "description"
+    - "numOfMembers"
+    properties:
+      description:
+        type: "string"
+      alternatives:
+        type: "array"
+        items:
+          type: "string"
+      numOfMembers:
+        type: "integer"

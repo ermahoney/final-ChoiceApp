@@ -1,0 +1,211 @@
+swagger: '2.0'
+info:
+  description: This is a choice App
+  version: 1.0.0
+  title: Choice App
+
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+
+# tags are used for organizing operations
+tags:
+- name: admins
+  description: Secured Admin-only calls
+- name: consumers
+  description: Operations available to regular consumers
+
+paths:
+  /createChoice:
+    post:
+      tags:
+      - consumers
+      summary: Submits info to create a choice
+      operationId: createChoice
+      description: |
+        The user/member inputs information into the form and presses the submit
+        button to create a choice
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: ChoiceForm
+        description: contains info user submitted into the form to create a choice
+        schema:
+          $ref: '#/definitions/ChoiceForm'
+      responses:
+        200:
+          description: choice successfully created and navigated to
+          #maybe add a schema ref to redirect the page
+        400:
+          description: error creating choice
+  /addFeedback:
+    post:
+      tags:
+      - consumers
+      summary: Add feedback
+      operationId: addFeedback
+      description: |
+        The member requests to add feedback to an alternative
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: Alternative
+        description: alternative the feedback will be added to
+        schema:
+          $ref: '#/definitions/Alternative'
+      responses:
+        200:
+          description: request successful and box for user's feedback appeared
+        400:
+          description: error requesting box for feedback
+  /submitFeedback:
+    post:
+      tags:
+      - consumers
+      summary: Submit feedback
+      operationId: submitFeedback
+      description: |
+        The member requests to submit feedback to an alternative
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: Feedback
+        description: contains user's feedback
+        schema:
+          $ref: '#/definitions/Feedback'
+      responses:
+        200:
+          description: request successful and feedback submitted
+        400:
+          description: error submitting feedback
+  /likeButton:
+    post:
+      tags:
+      - consumers
+      summary: Press like button
+      operationId: likeButton
+      description: |
+        The member presses the like button on an alternative
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: Vote
+        description: what alternative, member, and kind of vote(approval)
+        schema:
+          $ref: '#/definitions/Vote'
+      responses:
+        200:
+          description: successfully added the member's approval to the alternative
+        400:
+          description: error adding member's approval
+  /dislikeButton:
+    post:
+      tags:
+      - consumers
+      summary: Press dislike button
+      operationId: dislikeButton
+      description: |
+        The member presses the dislike button on an alternative
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: Vote
+        description: what alternative, member, and kind of vote(disapproval)
+        schema:
+          $ref: '#/definitions/Vote'
+      responses:
+        200:
+          description: successfully added the member's disapproval to the alternative
+        400:
+          description: error adding member's disapproval
+definitions:
+  Member:
+    type: object
+    required:
+    - name
+    properties:
+      name:
+        type: string
+  Alternative:
+    type: object
+    required:
+    - id
+    - description
+    properties:
+      id:
+        type: string
+      description:
+        type: string
+  ChoiceForm:
+    type: object
+    required:
+    - description
+    - alternatives
+    - numOfTeams
+    properties:
+      description:
+        type: string
+      alternatives:
+        type: array
+        items:
+          $ref: '#/definitions/Alternative'
+      numOfTeams:
+        type: integer
+  Feedback:
+    type: object
+    required:
+    - member
+    - info
+    - timestamp
+    - alternative
+    properties:
+      member:
+        type: array
+        items:
+          $ref: '#/definitions/Member'
+      info:
+        type: string
+      timestamp:
+        type: string
+      alternative:
+        type: array
+        items:
+          $ref: '#/definitions/Alternative'
+  Vote:
+    type: object
+    required:
+    - alternative
+    - member
+    - kind
+    properties:
+      alternative:
+        type: array
+        items:
+          $ref: '#/definitions/Alternative'
+      member:
+        type: array
+        items:
+          $ref: '#/definitions/Member'
+      kind:
+        type: string
+        #approval or dissapproval
+# Added by API Auto Mocking Plugin
+host: virtserver.swaggerhub.com
+basePath: /lewasserman2/ChoiceApp/1.0.0
+schemes:
+ - https
